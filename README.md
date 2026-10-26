@@ -1,6 +1,6 @@
 # omnibus/colissimo
 
-Colissimo (La Poste) for [omniscient/omnibus](https://github.com/glitchr-studio/omnibus).
+Colissimo (La Poste) for [omnisense/omnibus](https://github.com/glitchr-omnisense/omnibus).
 
 For now the gateway prices parcels from configuration only; labels, tracking and relay points (Colissimo's web services) are still to be wired.
 
@@ -8,7 +8,7 @@ For now the gateway prices parcels from configuration only; labels, tracking and
 $gateway = (new ColissimoGatewayFactory())->create($options);   // the options below
 ```
 
-No framework needed, and no HTTP client: the package requires `omniscient/omnibus` alone and calls
+No framework needed, and no HTTP client: the package requires `omnisense/omnibus` alone and calls
 nothing. In a Symfony application, the same through the bundle's configuration:
 
 ```yaml

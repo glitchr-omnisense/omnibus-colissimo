@@ -1,6 +1,6 @@
 # omnibus/colissimo
 
-Colissimo (La Poste) for [omniscient/omnibus](https://github.com/glitchr-studio/omnibus). For now
+Colissimo (La Poste) for [omnisense/omnibus](https://github.com/glitchr-omnisense/omnibus). For now
 the gateway prices parcels from configuration only: Colissimo's web services (labels, tracking,
 relay points) are not wired yet, and the gateway calls nothing.
 
@@ -10,7 +10,7 @@ relay points) are not wired yet, and the gateway calls nothing.
 composer require omnibus/colissimo
 ```
 
-Requires PHP 8.2 and `omniscient/omnibus` (2.x), nothing else: no HTTP client, no framework. The
+Requires PHP 8.2 and `omnisense/omnibus` (2.x), nothing else: no HTTP client, no framework. The
 factory takes an HTTP client in its constructor like every carrier, and does not use it. In a
 Symfony application with `Omnibus\Bridge\Symfony\OmnibusBundle`, the factory is registered as soon
 as the package is installed.
@@ -26,7 +26,7 @@ supports nothing.
 
 | Option | Type | Default | Required | |
 |---|---|---|---|---|
-| `rates` | list | - | no | prices from configuration, the only capability ([the rates option](https://github.com/glitchr-studio/omnibus/blob/2.x/docs/configuration.md#the-rates-option)) |
+| `rates` | list | - | no | prices from configuration, the only capability ([the rates option](https://github.com/glitchr-omnisense/omnibus/blob/2.x/docs/configuration.md#the-rates-option)) |
 
 No shipment option is read.
 
