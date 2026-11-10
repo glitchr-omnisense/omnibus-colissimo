@@ -17,6 +17,7 @@ final class ColissimoGatewayFactory extends GatewayFactory
         $config->defaults([
             'omnibus.factory_name' => 'colissimo',
             'omnibus.factory_title' => 'Colissimo',
+            'omnibus.policy' => __DIR__.'/policy.json',
         ]);
     }
 }

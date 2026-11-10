@@ -1,0 +1,38 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "colissimo",
+    "rateLimits": [],
+    "concurrency": null,
+    "rights": {
+        "commercial": "contract",
+        "openSourceRequired": false,
+        "caching": {
+            "permission": "unknown",
+            "maxTtl": null
+        },
+        "storage": "unknown",
+        "redistribution": "unknown",
+        "attribution": {
+            "required": false,
+            "text": null,
+            "url": null,
+            "where": []
+        },
+        "licence": null
+    },
+    "requirements": {
+        "key": false,
+        "userAgent": {
+            "required": false,
+            "pattern": null
+        }
+    },
+    "provenance": {
+        "terms": null,
+        "policy": "https://www.colissimo.entreprise.laposte.fr/media/387/download",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": "https://www.colissimo.entreprise.laposte.fr",
+        "notes": "The package calls no Colissimo service yet: it rates from the \"rates\" option only, hence no limit to count. Colissimo's web services, when wired: the SLS label service needs the contract number and its password (the customer answers for every connection made with them), at most 5 parcels in a multi-parcel shipment; the tracking service (Suivi TL v2.1) also needs the calling IP addresses registered with Colissimo. No published quota."
+    }
+}

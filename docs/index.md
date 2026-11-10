@@ -103,6 +103,10 @@ omnibus:
                         bands: { 250: 549, 500: 749, 1000: 899, 2000: 999, 5000: 1499 } }
 ```
 
+## Usage policy
+
+`policy.json` (named in `composer.json`'s `extra.omnisense.policy`) declares no limit: the package calls no Colissimo service yet (configured rates only). The notes keep what Colissimo's web service specifications require for later: the contract number and its password, the calling IP addresses for tracking. A 429 is a `RateLimitedException`, never retried, and the carrier's next calls wait for its `Retry-After`, unsent. See omnisense/omnibus' [Usage policies and rate limits](https://github.com/glitchr-omnisense/omnibus/blob/2.x/docs/policies.md).
+
 ## Errors
 
 No carrier is called, so there is no `CarrierException`. Every request but `Rating` (and `Rating`
